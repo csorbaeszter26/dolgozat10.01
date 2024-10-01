@@ -8,13 +8,16 @@ export default class DogaController{
         this.taroloElem=$(".tartalom")
         this.dogamodell = new DogaModell()
         new Kartyak(this.dogamodell.getList(), this.taroloElem)
-        this.#esemenyKezelo
+        this.#esemenyKezelo()
+        //console.log(this.dogamodell.getList())
 
     }
 
     #esemenyKezelo(){
-        $(window).on("katt", (event) =>{
-            this.dogamodell.torol(event.detail)
+        $(window).on("katt", (event)=>{
+            console.log(event.detail)
+            this.dogamodell.torol(event.detail.ID)
+            new Kartyak(this.dogamodell.getList(), this.taroloElem)
         })
 
     }

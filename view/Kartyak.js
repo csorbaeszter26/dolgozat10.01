@@ -14,8 +14,8 @@ export default class Kartyak{
     }
 
     mindenKiir(){
-        this.#lista.forEach(elem, index => {
-            new Kartya(elem, index, this.#szuloElem)
+        this.#lista.forEach((element, index) => {
+            new Kartya(element, index, this.#szuloElem)
         });
     }
 

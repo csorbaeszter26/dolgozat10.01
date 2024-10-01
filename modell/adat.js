@@ -1,20 +1,23 @@
 export const LISTA = [
     {
         nev: "Cirmi",
-        ID: 1,
-        leiras: "Kedves, aranyos, cirmos"
+        ID: 0,
+        leiras: "Kedves, aranyos, cirmos",
+        kor: 4
 
     },
     {
         nev: "Mák",
-        ID: 2,
-        leiras: "Hangos, bújós, fekete"
+        ID: 1,
+        leiras: "Hangos, bújós, fekete",
+        kor: 2
 
     },
     {
         nev: "Dinnye",
-        ID: 3,
-        leiras: "Eleven, barátkozós, szürke"
+        ID: 2,
+        leiras: "Eleven, barátkozós, szürke",
+        kor: 7
 
     }
 ]

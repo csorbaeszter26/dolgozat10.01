@@ -1,0 +1,59 @@
+article{
+    background-color: aliceblue;
+}
+
+h1{
+    margin: auto;
+    place-content: center;
+    place-items: center;
+    text-align: center;  
+    padding-bottom: 100px;
+}
+footer{
+    margin: auto;
+    place-content: center;
+    place-items: center;
+    text-align: center;  
+    padding-top: 100px;
+}
+
+.p{
+    padding-right: 10px;
+    text-align: justify;
+}
+
+li{
+    gap: 10px;
+    
+}
+main{
+    background-color: bisque;
+}
+
+button{
+    font-weight: bold;
+}
+
+button:hover{
+    color: aquamarine;
+}
+
+h3{
+    padding-bottom: 50px;
+
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+    body, main {
+        
+
+        background-size: cover;
+        width: 100%;
+    }
+
+
+}

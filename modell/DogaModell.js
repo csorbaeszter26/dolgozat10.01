@@ -4,9 +4,13 @@ export default class DogaModell{
 
     #lista = []
     
+    
     constructor(){
+        //this.#i=i
         //this.listaFeltolt()
         this.#lista = LISTA
+        
+        //this.torol()
     }
 
     /*listaFeltolt(){
@@ -19,9 +23,9 @@ export default class DogaModell{
         return this.#lista
     }
 
-    torol(){
-        console.log(1)
-        this.#lista(i).splice()
+    torol(i){
+        console.log(i)
+        this.#lista.splice(i,1)
     }
 
 

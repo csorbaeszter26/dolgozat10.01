@@ -20,7 +20,7 @@ export default class Kartya{
 
          this.#szuloElem.append(
             `
-                <li><button class="elem">Törlés</button>${this.#jel}</li>
+                <li><span><button class="elem">Törlés</button></span> <p><span> ${this.#jel.nev}: </span><span>${this.#jel.leiras},</span> <span>${this.#jel.kor} éves</span><p></li>
             `
         )
     }
@@ -29,6 +29,7 @@ export default class Kartya{
         this.sorElem.on("click", () => {
             const e = new CustomEvent("katt", {detail: this.#index})
             window.dispatchEvent(e);
+            //console.log(this.#jel)
         })
     }
     
